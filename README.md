@@ -31,3 +31,10 @@ blender_launcher/
 ## 既知の制約事項 / 注意点
 - 標準のインストール先である `C:\Program Files\Blender Foundation\Blender <バージョン名>\blender.exe` にBlenderがインストールされていることを前提としています。
   - Dドライブなどの別ドライブ、またはポータブル版など標準と異なるパスを使用している場合は、`blender.bat` 内の後段にある `start ""` で始まる起動パスを適切な場所へ書き換えてください。
+
+## その他の環境変数の設定について
+`blender.bat` 内では、ユーザー固有の設定フォルダを指定するために環境変数（`BLENDER_USER_CONFIG` など）を割り当ててBlenderを起動しています。
+他にもさまざまな環境変数を指定してBlenderの起動時の挙動を制御することが可能です。
+詳細な環境変数の種類と仕様については、以下の公式ドキュメント（コマンドライン引数 - 環境変数）を参照してください。
+
+[Blender Manual: Command Line Arguments - Environment Variables](https://docs.blender.org/manual/en/4.5/advanced/command_line/arguments.html#command-line-args-environment-variables)
