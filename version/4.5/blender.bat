@@ -10,5 +10,7 @@ set "BLENDER_USER_SCRIPTS=%CURRENT_DIR%scripts"
 set "BLENDER_USER_DATAFILES=%CURRENT_DIR%datafiles"
 set "BLENDER_USER_EXTENSIONS=%CURRENT_DIR%extensions"
 
+set "PYTHONPATH=%PYTHONPATH%;%CURRENT_DIR%python"
+
 rem 取得したフォルダ名（バージョン）を利用してBlenderを起動
-start "" "C:\Program Files\Blender Foundation\Blender %VERSION_NAME%\blender.exe"
+start "" "C:\Program Files\Blender Foundation\Blender %VERSION_NAME%\blender.exe" --python-use-system-env
